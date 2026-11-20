@@ -1,0 +1,90 @@
+.timeline-horizontal {
+  max-width: 100%;
+  margin: 25px auto;
+  font-family: Arial, sans-serif;
+}
+
+.timeline-horizontal h3 {
+  text-align: center;
+  color: #0b5cab;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.timeline-scroll {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 10px 0;
+  position: relative;
+}
+
+.timeline-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.timeline-scroll::-webkit-scrollbar-thumb {
+  background: #0b5cab;
+  border-radius: 20px;
+}
+
+.evento {
+  min-width: 140px;
+  text-align: center;
+  position: relative;
+  flex: 1;
+}
+
+.fecha {
+  background: #0b5cab;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 8px 10px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.linea {
+  width: 2px;
+  height: 40px;
+  background: #0b5cab;
+  margin: auto;
+  position: relative;
+}
+
+.linea:after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: -4px;
+  width: 10px;
+  height: 10px;
+  background: #0b5cab;
+  border-radius: 50%;
+}
+
+.texto {
+  margin-top: 15px;
+  background: #f5f8fc;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 1.4;
+  border-top: 3px solid #0b5cab;
+}
+
+@media (max-width: 768px) {
+  .timeline-horizontal h3 {
+    font-size: 20px;
+  }
+
+  .evento {
+    min-width: 160px;
+  }
+
+  .texto {
+    font-size: 12px;
+  }
+}
